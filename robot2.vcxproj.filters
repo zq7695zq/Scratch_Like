@@ -1,0 +1,217 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\MainWindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\scene\ComponentScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\view\ActionsView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="component\Component.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\view\ComponentView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\scene\ActionScene.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\items\TextItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\items\InputItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="util\RobotUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\items\BackgroundItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\items\LabelItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="component\ComponentFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="widget\view\DragView.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="component\ComponentSlot.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="component\ComponentNest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="component\ComponentNorm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="widget\MainWindow.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\items\InputItem.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\items\TextItem.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="widget\items\BackgroundItem.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="widget\scene\ComponentScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="widget\view\ActionsView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="component\Component.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="const\RobotConst.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="widget\view\ComponentView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="widget\scene\ActionScene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="util\RobotUtil.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="widget\items\LabelItem.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="component\ComponentFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="enum\ComponentType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="widget\view\DragView.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="enum\ComponentCategory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="component\ComponentSlot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="component\ComponentNest.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="component\ComponentNorm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="component\Components\ComponentBackward.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="component\Components\ComponentBackwardByDistance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="component\Components\ComponentBeep.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="component\Components\ComponentForward.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="component\Components\ComponentForwardByDistance.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="component\Components\ComponentLeft.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="component\Components\ComponentRight.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="component\Components\ComponentCycleByCount.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="component\Components\ComponentLeftAngle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="component\Components\ComponentRightAngle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="component\Components\ComponentDelay.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="component\Components\ComponentLight.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="component\Components\ComponentLight2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="component\Components\ComponentLed1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="component\Components\ComponentLed2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="component\Components\ComponentLed3.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="component\Components\ComponentLed4.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="component\Components\ComponentLed5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="component\Components\ComponentCycleByCollision.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="component\Components\ComponentCollisionDection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="component\Components\ComponentAltitude.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="component\Components\ComponentTemperature.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="component\Components\ComponentInfared.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="Resource.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\test.svg" />
+    <None Include="resource\input.svg" />
+  </ItemGroup>
+</Project>

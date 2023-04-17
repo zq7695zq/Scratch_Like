@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{3DA104F1-DAB7-491D-B82D-28F8F34789A2}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="QtSettings">
+    <QtInstall>5.9.5_msvc2017_64</QtInstall>
+    <QtModules>core;gui;svg;widgets</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="QtSettings">
+    <QtInstall>5.9.5_msvc2017_64</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="component\ComponentNorm.cpp" />
+    <ClCompile Include="component\ComponentNest.cpp" />
+    <ClCompile Include="component\ComponentSlot.cpp" />
+    <ClCompile Include="component\ComponentFactory.cpp" />
+    <ClCompile Include="widget\view\DragView.cpp" />
+    <ClCompile Include="widget\items\LabelItem.cpp" />
+    <ClCompile Include="widget\items\BackgroundItem.cpp" />
+    <ClCompile Include="util\RobotUtil.cpp" />
+    <ClCompile Include="widget\items\InputItem.cpp" />
+    <ClCompile Include="widget\items\TextItem.cpp" />
+    <ClCompile Include="widget\scene\ActionScene.cpp" />
+    <ClCompile Include="widget\view\ComponentView.cpp" />
+    <ClCompile Include="component\Component.cpp" />
+    <ClCompile Include="widget\view\ActionsView.cpp" />
+    <ClCompile Include="widget\scene\ComponentScene.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="widget\MainWindow.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="widget\MainWindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="widget\items\BackgroundItem.h" />
+    <ClInclude Include="component\Components\ComponentBeep.h" />
+    <ClInclude Include="component\Components\ComponentBackward.h" />
+    <ClInclude Include="component\Components\ComponentCollisionDection.h" />
+    <ClInclude Include="component\Components\ComponentAltitude.h" />
+    <ClInclude Include="component\Components\ComponentCycleByCollision.h" />
+    <ClInclude Include="component\Components\ComponentInfared.h" />
+    <ClInclude Include="component\Components\ComponentDelay.h" />
+    <ClInclude Include="component\Components\ComponentForward.h" />
+    <ClInclude Include="component\Components\ComponentLed1.h" />
+    <ClInclude Include="component\Components\ComponentLed2.h" />
+    <ClInclude Include="component\Components\ComponentLed3.h" />
+    <ClInclude Include="component\Components\ComponentLed4.h" />
+    <ClInclude Include="component\Components\ComponentLed5.h" />
+    <ClInclude Include="component\Components\ComponentLeftAngle.h" />
+    <ClInclude Include="component\Components\ComponentLight.h" />
+    <ClInclude Include="component\Components\ComponentLight2.h" />
+    <ClInclude Include="component\Components\ComponentRight.h" />
+    <ClInclude Include="component\Components\ComponentLeft.h" />
+    <ClInclude Include="component\Components\ComponentBackwardByDistance.h" />
+    <ClInclude Include="component\ComponentNorm.h" />
+    <ClInclude Include="component\ComponentNest.h" />
+    <ClInclude Include="component\ComponentSlot.h" />
+    <ClInclude Include="component\Components\ComponentCycleByCount.h" />
+    <ClInclude Include="component\ComponentFactory.h" />
+    <ClInclude Include="component\Components\ComponentRightAngle.h" />
+    <ClInclude Include="component\Components\ComponentTemperature.h" />
+    <ClInclude Include="enum\ComponentCategory.h" />
+    <ClInclude Include="widget\view\DragView.h" />
+    <ClInclude Include="enum\ComponentType.h" />
+    <ClInclude Include="widget\items\LabelItem.h" />
+    <ClInclude Include="util\RobotUtil.h" />
+    <QtMoc Include="widget\items\InputItem.h" />
+    <QtMoc Include="widget\items\TextItem.h" />
+    <ClInclude Include="widget\scene\ActionScene.h" />
+    <ClInclude Include="widget\view\ComponentView.h" />
+    <ClInclude Include="component\Components\ComponentForwardByDistance.h" />
+    <ClInclude Include="component\Component.h" />
+    <ClInclude Include="const\RobotConst.h" />
+    <ClInclude Include="widget\view\ActionsView.h" />
+    <ClInclude Include="widget\scene\ComponentScene.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="Resource.qrc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="resource\input.svg" />
+    <None Include="resource\test.svg" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
